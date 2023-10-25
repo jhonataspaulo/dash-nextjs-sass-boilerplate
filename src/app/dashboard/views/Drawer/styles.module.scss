@@ -1,0 +1,8 @@
+@import '@core/theme/colors';
+@import '@core/theme/setup';
+
+.aside {
+  width: $drawer_width;
+  height: 100vh;
+  border-right: 1px solid $divider;
+}

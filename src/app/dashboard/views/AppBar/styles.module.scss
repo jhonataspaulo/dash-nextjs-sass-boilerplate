@@ -1,0 +1,7 @@
+@import '@core/theme/setup';
+
+.header {
+  border-bottom: 1px solid red;
+  width: calc(100vw - $drawer_width);
+  height: 5.5rem;
+}
