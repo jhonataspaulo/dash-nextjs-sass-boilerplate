@@ -8,8 +8,28 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   strong {
     display: block;
     font-size: 1.8rem;
+  }
+
+  .left {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+
+    .icon2 {
+      display: none;
+      @media screen and (max-width: $md) {
+        display: flex;
+      }
+    }
+
+    .icon1 {
+      @media screen and (max-width: $md) {
+        display: none;
+      }
+    }
   }
 }
