@@ -3,6 +3,8 @@ import { AppBar } from './views/AppBar'
 import { Content } from './views/Content'
 
 import styles from './layout.module.scss'
+import { DrawerProvider } from '@/@core/contexts/DrawerContext'
+import { DrawerMobile } from './views/DrawerMobile'
 
 export default function DashboardLayout({
   children,
@@ -11,13 +13,16 @@ export default function DashboardLayout({
 }) {
   return (
     <main className={styles.main}>
-      <Drawer />
-      <div className={styles.contentMain}>
-        <AppBar />
-        <Content>
-        {children}
-        </Content>
+      <DrawerProvider>
+        <Drawer />
+        <DrawerMobile />
+        <div className={styles.contentMain}>
+          <AppBar />
+          <Content>
+            {children}
+          </Content>
         </div>
+      </DrawerProvider>
     </main>
   )
 }
