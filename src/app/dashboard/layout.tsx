@@ -12,7 +12,7 @@ export default function DashboardLayout({
   return (
     <main className={styles.main}>
       <Drawer />
-      <div>
+      <div className={styles.contentMain}>
         <AppBar />
         <Content>
         {children}

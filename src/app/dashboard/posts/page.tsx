@@ -1,9 +1,9 @@
 import styles from './page.module.scss'
 
-export default function Statistics() {
+export default function PostsPage() {
   return (
     <main className={styles.main}>
-     <h5>Statistics</h5>
+     <h5>Posts</h5>
     </main>
   )
 }

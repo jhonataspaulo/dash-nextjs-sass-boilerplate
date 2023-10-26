@@ -1,14 +1,22 @@
+import {RxDashboard,RxComponent1,RxLightningBolt} from 'react-icons/rx'
+
 export const PAGES = [
   {
     label: 'Dashboard', 
-    path: 'dashboard'
+    path: '/dashboard',
+    icon: RxDashboard,
+    regex: /^\/dashboard$/,
   },
   {
-    label: 'Link 1', 
-    path: 'link1'
+    label: 'Categorias', 
+    path: '/dashboard/categories',
+    icon: RxComponent1,
+    regex: /^\/dashboard\/categories/,
   },
   {
-    label: 'Link 2', 
-    path: 'link2'
+    label: 'Posts', 
+    path: '/dashboard/posts',
+    icon: RxLightningBolt,
+    regex: /^\/dashboard\/posts/,
   },
 ]
